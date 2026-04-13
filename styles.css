@@ -247,6 +247,20 @@ video {
   box-shadow: 0 12px 34px rgba(31, 96, 108, 0.08);
 }
 
+.brand-mark--image {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.brand-mark__image {
+  display: block;
+  width: clamp(5rem, 9vw, 6rem);
+  border-radius: 1rem;
+  box-shadow: 0 16px 34px rgba(31, 96, 108, 0.16);
+}
+
 .brand-mark__symbol {
   position: relative;
   width: 3.15rem;
@@ -678,6 +692,14 @@ h3 {
   padding: 1.35rem;
 }
 
+.panel-card__price {
+  margin: 0 0 0.95rem;
+  font-size: clamp(1.45rem, 2.1vw, 2rem);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--brand-deep);
+}
+
 .feature-layout {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -749,11 +771,13 @@ h3 {
 
 .outcome-card h3 {
   font-size: clamp(1.35rem, 1.8vw, 1.8rem);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem;
+  display: grid;
+  gap: 0.7rem;
   line-height: 1.12;
+}
+
+.outcome-card h3 span {
+  justify-self: start;
 }
 
 .feature-list--tight {
